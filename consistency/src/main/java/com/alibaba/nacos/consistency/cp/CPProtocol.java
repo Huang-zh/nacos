@@ -21,12 +21,13 @@ import com.alibaba.nacos.consistency.ConsistencyProtocol;
 
 /**
  * cp protocol.
+ * 缓存一致性协议接口抽象之一：保障一致性和分区容错性
  *
  * @author <a href="mailto:liaochuntao@live.com">liaochuntao</a>
  */
 @SuppressWarnings("all")
 public interface CPProtocol<C extends Config, P extends RequestProcessor4CP> extends ConsistencyProtocol<C, P> {
-    
+
     /**
      * Returns whether this node is a leader node
      *
@@ -34,5 +35,5 @@ public interface CPProtocol<C extends Config, P extends RequestProcessor4CP> ext
      * @return is leader
      */
     boolean isLeader(String group);
-    
+
 }

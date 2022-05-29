@@ -21,6 +21,8 @@ import com.alibaba.nacos.consistency.ConsistencyProtocol;
 
 /**
  * ap protocol.
+ * 缓存一致性协议接口抽象之一：保障高可用和分区容错性
+ * 目前并没有具体实现，可考虑后续实现
  *
  * @author <a href="mailto:liaochuntao@live.com">liaochuntao</a>
  */
